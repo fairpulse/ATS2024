@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Wed Jan 17 15:06:26 2024
+| Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_drc -file ./ModFirstXilArb/post_impl_drc.rpt
+| Design       : d5example_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: d5example_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 3          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 3          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net arbpuf/fiabot/outwl[15] is a gated clock net sourced by a combinational pin arbpuf/fiabot/BotLine[14].muxer/O, cell arbpuf/fiabot/BotLine[14].muxer. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net arbpuf/fiatop/outwl[15] is a gated clock net sourced by a combinational pin arbpuf/fiatop/TopLine[14].muxer/O, cell arbpuf/fiatop/TopLine[14].muxer. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ten is a gated clock net sourced by a combinational pin ten_inferred_i_1/O, cell ten_inferred_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT arbpuf/fiabot/BotLine[14].muxer is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    arbpuf/fiabot/dffl {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT arbpuf/fiatop/TopLine[14].muxer is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    arbpuf/fiatop/dffl {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ten_inferred_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    arbpuf/dff3 {FDCE}
+
+Related violations: <none>
+
+

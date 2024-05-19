@@ -34,4 +34,4 @@ This file mut be sourced in the **Tcl Console** with the following command:
 
 6. This file can be used to evaluate the Quality metrics of the PUF design.
 
->>For any further queries, write to <sreekanthbv@iitkgp.ac.in>
+>>>For any further queries, write to <sreekanthbv@iitkgp.ac.in>

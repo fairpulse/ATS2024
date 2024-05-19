@@ -30,7 +30,7 @@ This file mut be sourced in the **Tcl Console** with the following command:
 
 5. The CRP data will be logged in the file created using *cat* in step 1. For post processing dump this binary file into hexadecimal format:
   > **hexdump -v -e '10/1 "%02x""\n"' CRPfilename > CRPfilename.txt**
-   CRPfilename.txt will be in human-readable form and can be viewed with any editor (*gedit*, *vim* etc)
+   - CRPfilename.txt will be in human-readable form and can be viewed with any editor (*gedit*, *vim* etc)
 
 6. This file can be used to evaluate the Quality metrics of the PUF design.
 

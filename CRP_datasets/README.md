@@ -1,5 +1,5 @@
 # CRP Datasets
-## A Challenge File and few Response Files acquired from various FPGA boards (Hexadecimal Format)
+## A Challenge File and few Response Files (Hexadecimal Format) acquired from various FPGA boards 
 
 In each .txt file there are 2,097,152 rows, wherein each row contains the response for a corresponding Challenge in the 
 following encoding:

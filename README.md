@@ -36,5 +36,14 @@ This file mut be sourced in the **Tcl Console** with the following command:
    - CRPfilename.txt will be in human-readable form and can be viewed with any editor (*gedit*, *vim* etc)
 
 6. This file can be used to evaluate the Quality metrics of the PUF design.
+7. MLP Attacks results are shown below:
+<figure>
+    <img src="MLP_attack_res1.png">
+    <figcaption>MLP_Wisiol Attack</figcaption>
+</figure> 
+<figure>
+    <img src="MLP_attack_res2.png">
+    <figcaption>MLP_Wisiol Attack Continued</figcaption>
+</figure>   
 
 

@@ -1,5 +1,6 @@
 ### Please cite the following paper:
-# **Design, Implementation and Characterization of a Novel Robust-by-Construction Arbiter PUF Circuit on Xilinx FPGAs**, _The 33rd Asian Test Symposium, Dec 17-20 2024, Gujarat, India._
+# **Design, Implementation and Characterization of a Novel Robust-by-Construction Arbiter PUF Circuit on Xilinx FPGAs**, 
+## Venkata Sreekanth B., Rajat Subhra Chakraborty, Indrajit Chakrabarti. _The 33rd Asian Test Symposium, Dec 17-20 2024, Gujarat, India._
 
 ### System Requirements: Linux, Vivado Design Suite 18.1 or later
 The system can be run in both "Project Mode" and "Non-Project Mode" of Vivado Design Suite. It is recommented to choose "Non-Project Mode" for automation.
